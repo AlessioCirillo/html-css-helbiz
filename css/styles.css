@@ -4,8 +4,39 @@ body{
 }
 
 /* UTILITIES */
+.container-xl{
+  width: 1350px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container-xl::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  padding: 30px 20px 0 20px;
+}
+
+.text-over-img{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.text-over-img a{
+  display: block;
+}
+
 h1{
-  font-size: 48px;
+  font-size: 36px;
+}
+
+h3{
+  font-size: 34px;
+  font-weight: 600;
 }
 
 ul li{
@@ -14,10 +45,13 @@ ul li{
   line-height: normal;
 }
 
+a{
+  text-decoration: none;
+}
+
 ul a{
   margin: 0 10px;
   color: black;
-  text-decoration: none;
 }
 
 /* HEADER */
@@ -47,6 +81,10 @@ header ul{
   .only-desktop{
     display: block;
   }
+
+  .hero .img-text h1{
+    font-size: 48px;
+  }
 }
 
 /* JUMBOTRON */
@@ -70,4 +108,21 @@ header ul{
 
 .hero .img-text p{
   font-size: 16px;
+}
+
+/* MAIN */
+
+/* HELBIZ PRODUCT */
+.container-xl img{
+  padding-top: 25px;
+  height: 380px;
+}
+
+.product-size{
+  padding:30px;
+  background: #fafafa;
+}
+
+.product-size p{
+  font-weight: 600;
 }
