@@ -1,19 +1,58 @@
-[class*="col-"] {
-    border: 1px solid black;
-    height: 100px;
+
+body{
+  font-family: 'Open Sans', sans-serif;
 }
 
-.container{
-  width:1350px;
+/* UTILITIES */
+h1{
+  font-size: 48px;
 }
 
+ul li{
+  display: inline-block;
+  list-style: none;
+  line-height: normal;
+}
+
+ul a{
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+
+/* HEADER */
 header{
-    height: 100px;
+  line-height: 80px;
 }
 
+header ul{
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 0;
+}
+
+.lang{
+  margin: 0;
+  padding: 0 10px;
+  border-left: 1px solid black;
+}
+
+.only-desktop{
+  display: none;
+}
+
+@media screen and (min-width: 991px) {
+  .only-desktop{
+    display: block;
+  }
+}
+
+/* JUMBOTRON */
 .hero{
   position: relative;
-  height: 760px;
+  height: 600px;
   background-image: url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,9 +60,14 @@ header{
 }
 
 .img-text{
-  position:absolute;
+  position: absolute;
+  text-align: center;
+  color: white;
   left: 50%;
   top:50%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
+}
+
+.hero .img-text p{
+  font-size: 16px;
 }
