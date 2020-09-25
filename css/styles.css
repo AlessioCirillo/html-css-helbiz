@@ -4,6 +4,10 @@ body{
 }
 
 /* UTILITIES */
+.only-desktop{
+  display: none;
+}
+
 .container-xl{
   width: 1350px;
   max-width: 100%;
@@ -16,15 +20,10 @@ body{
   clear: both;
 }
 
-[class*="col-"] {
-  padding: 30px 20px 0 20px;
-}
-
 .text-over-img{
   text-align: center;
   font-size: 20px;
 }
-
 
 .text-over-img a{
   display: block;
@@ -37,6 +36,10 @@ h1{
 h3{
   font-size: 34px;
   font-weight: 600;
+}
+
+p{
+  font-size: 20px;
 }
 
 ul li{
@@ -52,6 +55,29 @@ a{
 ul a{
   margin: 0 10px;
   color: black;
+}
+
+/* UTILITIES FRAMEWORK (DISPLAY NONE AND PHONE) */
+@media screen and (min-width: 992px) {
+  .only-desktop{
+    display: block;
+  }
+
+  .hero .img-text h1{
+    font-size: 48px;
+  }
+
+  .how-work .phone{
+    margin-top:100px;
+    text-align: center;
+    height:580px;
+    width: 100%;
+  }
+
+  .how-work .phone img{
+    max-height: 600px;
+    max-width: 100%;
+  }
 }
 
 /* HEADER */
@@ -71,20 +97,6 @@ header ul{
   margin: 0;
   padding: 0 10px;
   border-left: 1px solid black;
-}
-
-.only-desktop{
-  display: none;
-}
-
-@media screen and (min-width: 991px) {
-  .only-desktop{
-    display: block;
-  }
-
-  .hero .img-text h1{
-    font-size: 48px;
-  }
 }
 
 /* JUMBOTRON */
@@ -118,6 +130,10 @@ header ul{
   height: 380px;
 }
 
+.container-xl [class*="col-"] {
+  padding: 30px 20px 0 20px;
+}
+
 .product-size{
   padding:30px;
   background: #fafafa;
@@ -125,4 +141,32 @@ header ul{
 
 .product-size p{
   font-weight: 600;
+}
+
+/* HOW-WORK */
+.how-work{
+  height: 400px;
+  margin-top: 40px;
+  background-image: url(../img/helbiz-banner.jpg);
+  background-size: cover;
+  background-position: left center;
+}
+
+.how-work .col-right,
+.how-work .col-left{
+  margin-top:460px;
+  padding: 0 20px;
+}
+
+.how-work .container .col-right{
+  padding-top: 47px;
+}
+
+.how-work .container .col-left{
+  text-align: right;
+}
+
+.how-work .container .col-right p{
+  font-weight: 600;
+  margin:0;
 }
