@@ -36,10 +36,12 @@ h1{
 h3{
   font-size: 34px;
   font-weight: 600;
+  margin: 15px 0;
 }
 
 p{
   font-size: 20px;
+  margin: 15px 0;
 }
 
 ul li{
@@ -122,6 +124,10 @@ header ul{
   font-size: 16px;
 }
 
+.hero .img-text a img{
+  padding:12px;
+}
+
 /* MAIN */
 
 /* HELBIZ PRODUCT */
@@ -159,7 +165,7 @@ header ul{
 }
 
 .how-work .container .col-right{
-  padding-top: 47px;
+  padding-top: 30px;
 }
 
 .how-work .container .col-left{
@@ -169,4 +175,89 @@ header ul{
 .how-work .container .col-right p{
   font-weight: 600;
   margin:0;
+}
+
+/* SMART MOBILITY */
+.scooter{
+  position: relative;
+  height: 500px;
+  background-image: url(../img/scooter-bg.jpg);
+  background-size: cover;
+}
+
+
+.mobility .scooter .text-over-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 992px) {
+  .mobility .scooter .text-over-img{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.mobility .app{
+  background: #44505d;
+}
+
+.app .get-app{
+  height: 255px;
+  background-image: url(../img/helbiz-app.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cities{
+  height: 420px;
+  background-image: url(../img//cities.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.mobility .text-over-img{
+  padding-top: 20px;
+  color: white;
+}
+
+.mobility .text-over-img a{
+  color: white;
+  display: inline-block;
+  padding-left: 15px;
+}
+
+/* SOCIAL BANNER */
+.social-banner{
+  position: relative;
+  height: 400px;
+  margin-top: 40px;
+  background-image: url(../img/social-banner.jpg);
+  background-size: cover;
+  background-position: left center;
+}
+
+.social-banner .text-over-img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px 80px;
+}
+
+.social-banner .text-over-img  h3{
+  margin-bottom: 2px;
+}
+
+.social-banner .text-over-img ul {
+  padding: 0;
+  margin-top:0;
+  margin-bottom: 15px;
+  font-size: 35px;
 }
