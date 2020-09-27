@@ -34,7 +34,7 @@ h1{
 }
 
 h3{
-  font-size: 34px;
+  font-size: 27px;
   font-weight: 600;
   margin: 15px 0;
 }
@@ -50,13 +50,18 @@ ul li{
   line-height: normal;
 }
 
+ul a{
+  margin: 0 10px;
+  color: black;
+}
+
 a{
   text-decoration: none;
 }
 
-ul a{
-  margin: 0 10px;
-  color: black;
+.hero .img-text a img ,
+.container .store a img{
+  margin:12px;
 }
 
 /* UTILITIES FRAMEWORK (DISPLAY NONE AND PHONE) */
@@ -124,9 +129,6 @@ header ul{
   font-size: 16px;
 }
 
-.hero .img-text a img{
-  padding:12px;
-}
 
 /* MAIN */
 
@@ -165,7 +167,7 @@ header ul{
 }
 
 .how-work .container .col-right{
-  padding-top: 30px;
+  padding-top: 22px;
 }
 
 .how-work .container .col-left{
@@ -212,6 +214,7 @@ header ul{
   background-image: url(../img/helbiz-app.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 
 .cities{
@@ -260,4 +263,114 @@ header ul{
   margin-top:0;
   margin-bottom: 15px;
   font-size: 35px;
+}
+
+/* FOOTER */
+.footer{
+margin-top: 40px;
+background: #000000;
+color: white;
+}
+
+.cont-1{
+  padding-top: 100px;
+}
+
+.footer .container{
+  color: white;
+  padding-left: 15px;
+  padding-bottom: 25px;
+}
+
+.logo-footer{
+  padding-bottom: 40px;
+}
+
+.footer .container ul li h4{
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.footer .container ul{
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.footer .container ul li{
+  display: block;
+  margin: 20px 0;
+}
+
+.footer .container ul li:first-child{
+  margin-top: 0;
+}
+
+.footer .container ul li a{
+  color: #fffff7;
+  font-size: 16px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.cont-1,
+.cont-2{
+  border-bottom: 1px solid #fffff7;
+}
+
+.footer .cont-2 ul li{
+  display: inline-block;
+}
+
+.footer .cont-2{
+  padding-top: 20px;
+}
+
+.footer .cont-2 ul{
+  margin-bottom: 0;
+}
+
+.cont-2 ul li a i{
+  font-size: 20px;
+}
+
+.cont-2 {
+  text-align: center;
+}
+
+.cont-2 small{
+  color: #fffff7;
+}
+
+.cont-2 .support{
+  padding-top: 30px;
+}
+.store{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.store a img{
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 992px)  {
+  .footer .container{
+    padding-left: 0;
+  }
+  .footer .container [class*="col-"] {
+    padding-left: 0;
+  }
+  .cont-2 {
+    text-align: left;
+  }
+
+  .cont-2 .support{
+    padding-top: 0;
+  }
+
+  .cont-2 small{
+    line-height: 62.4px;
+  }
 }
